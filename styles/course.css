@@ -89,12 +89,12 @@ nav a:hover {
     text-align: center;
 }
 
-.course-work-container h2,
+.course-work-container h1,
 .lagos-container h2,
 section h2 {
     background-color: #007BFF; /* Different color background for heading */
-    color: white;              /* White text color for better contrast */
-    padding: 10px;            /* Add some padding for aesthetics */
+    color: white;
+    padding: 10px;
     border-radius: 5px;       /* Rounded corners for the heading */
 }
 
