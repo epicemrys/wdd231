@@ -61,6 +61,14 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a.active {
+    background-color: #FFD700; /* Gold background for the active item */
+    color: #000;               /* Change text color to black for contrast */
+    font-weight: bold;
+    border-radius: 5px;
+    content: "📍";
+}
+
 nav a:hover {
     color: #FFD700;
 }

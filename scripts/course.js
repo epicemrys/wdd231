@@ -113,7 +113,7 @@ function toggleMenu() {
     menu.classList.toggle("active"); // Toggle display of the menu
 
     if (menu.classList.contains("active")) {
-        hamburger.innerHTML = '✖'; // Change to 'X'
+        hamburger.innerHTML = '❌'; // Change to 'X'
     } else {
         hamburger.innerHTML = '&#9776;'; // Change back to Hamburger icon
     }
