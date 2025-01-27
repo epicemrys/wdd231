@@ -265,6 +265,12 @@ h2, .home-title {
         display: flex; /* Show when active */
     }
 
+    .home-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 20px;
+    }
+
     .menu-toggle {
         display: block;
         background: none;
@@ -283,13 +289,12 @@ h2, .home-title {
         position: relative; /* Absolute positioning of nav */
         z-index: 10;
     }
-}
 
     .nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .nav a {
         padding: 10px 15px;
@@ -304,4 +309,5 @@ h2, .home-title {
         color: white; 
         font-size: 1.5rem; 
         cursor: pointer; 
+    }
 }
