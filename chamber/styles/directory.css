@@ -303,8 +303,6 @@ h2, .home-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        max-width: 100%;
         overflow: hidden;
     }
 
@@ -312,7 +310,6 @@ h2, .home-title {
         padding: 8px 10px;
         color: white;
         text-decoration: none;
-        flex-grow: 1;
     }
 
     .menu-toggle {
