@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Maria's Boutique",
+        "address": "123 Fashion St, Timbuktu, Mali",
+        "phone": "(223) 555-0101",
+        "url": "http://marias-boutique.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 1,
+        "additional_info": "Specializes in women's fashion."
+    },
+    {
+        "name": "Diego's Tech Solutions",
+        "address": "456 Tech Ave, Timbuktu, Mali",
+        "phone": "(223) 555-0102",
+        "url": "http://diegotech.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 2,
+        "additional_info": "Providing IT support for local businesses."
+    },
+    {
+        "name": "Timbuktu Coffee Co.",
+        "address": "789 Coffee Blvd, Timbuktu, Mali",
+        "phone": "(223) 555-0103",
+        "url": "http://timbuktu-coffee.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 1,
+        "additional_info": "Locally sourced coffee and pastries."
+    },
+    {
+        "name": "Basira's Bakery",
+        "address": "34 Sweet St, Timbuktu, Mali",
+        "phone": "(223) 555-0104",
+        "url": "http://basirasbakery.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 3,
+        "additional_info": "Famous for our special pastries."
+    },
+    {
+        "name": "Timbuktu Florist",
+        "address": "90 Flower Rd, Timbuktu, Mali",
+        "phone": "(223) 555-0105",
+        "url": "http://timbuktu-florist.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 1,
+        "additional_info": "The best flower arrangements in town."
+    },
+    {
+        "name": "Book Nook",
+        "address": "123 Story St, Timbuktu, Mali",
+        "phone": "(223) 555-0106",
+        "url": "http://booknook.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 2,
+        "additional_info": "A cozy spot for readers and writers."
+    },
+    {
+        "name": "Francisco's Furniture",
+        "address": "456 Home St, Timbuktu, Mali",
+        "phone": "(223) 555-0107",
+        "url": "http://franciscosfurniture.com",
+        "image": "https://placehold.co/100x100",
+        "membership_level": 3,
+        "additional_info": "Quality furniture for all your needs."
+    }
+]

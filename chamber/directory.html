@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="A resource hub for businesses in the city of Timbuktu offering directories, events, and networking opportunities.">
+    <meta name="author" content="Charles Ukoh">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://epicemrys.github.io/wdd231/chamber/images/Timbuktu">
+    <meta property="og:url" content="https://epicemrys.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/Timbuktu">
+    <link rel="stylesheet" href="styles/directory.css"> 
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo" class="logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+            <i class="fas fa-adjust"></i>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="https://placehold.co/1300x300" alt="scalable, responsive hero image" class="hero-image">
+            <button class="hero-button">Keynote Tickets</button>
+        </div>
+    </div>
+
+    <main>
+        <h2 class="home-title">Home</h2>
+        <div class="home-grid">
+            <section class="section event-section">
+                <h3 class="section-title">Events</h3>
+                <!-- Placeholder content for events -->
+            </section>
+            <section class="section weather-section">
+                <h3 class="section-title">Current Weather</h3>
+                <div class="weather-info">
+                    <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon">
+                    <div class="weather-details">
+                        <p class="temperature">75°F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°</p>
+                        <p>Low: 52°</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section forecast-section">
+                <h3 class="section-title">Weather Forecast</h3>
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </section>
+        </div>
+        
+        <div class="member-directory">
+            <h2 class="member-directory-title">Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view" class="toggle-button active">Grid View</button>
+                <button id="list-view" class="toggle-button">List View</button>
+            </div>
+            <div class="grid-container">
+                <!-- Members will be populated here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="footer-center social-icons">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/youtube-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/x-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/linkedin-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Charles Ukoh ⭐</p>
+            <p>&copy; <span id="current-year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to set last modification date
+        document.getElementById('last-modification').innerText = document.lastModified;
+
+        // JavaScript to set the current year
+        document.getElementById('current-year').innerText = new Date().getFullYear();
+
+        // Toggle navigation menu for mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            if (nav.classList.contains('active')) {
+                nav.style.display = 'flex'; // Directly change the display style here
+            } else {
+                nav.style.display = 'none'; // Hide it
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #6b7280;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.nav a {
+    color: #ffffff;
+}
+
+.nav a:hover {
+    text-decoration: underline; /* Hover effect on nav links */
+    color: gold;
+}
+
+.hero {
+    background-color: #f0f4f8;
+    padding: 2rem;
+}
+
+.hero-button {
+    background-color: #4a5568; 
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333333;
+}
+
+.home-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.home-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    display: grid;
+    gap: 20px;
+}
+
+.section {
+    background-color: #4a5568;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.weather-section, .forecast-section {
+    background-color: #4a5568;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    margin-right: 1rem;
+    width: 50px;
+}
+
+.weather-details {
+    margin-left: 1rem;
+}
+
+.temperature {
+    font-size: 1.25rem;
+}
+
+.member-directory {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #edf2f7;
+    border-radius: 5px; 
+    color: #2d3748;
+    display: grid;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive cards */
+    gap: 15px;
+}
+
+.business-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle {
+    margin-bottom: 1rem;
+}
+
+.toggle-button {
+    background-color: #6b7280;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.toggle-button.active {
+    background-color: #4a5568;
+}
+
+.list-view {
+    display: block; /* Show member cards as block in list view */
+}
+
+.list-view .business-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.list-view .business-card img {
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #6b7280;
+    color: #ffffff;
+    border-top: 1px solid #ccc;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.icon-youtube, .icon-twitter, .icon-linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Responsive Styles */
+.header {
+    flex-wrap: wrap; /* otems to wrap on smaller screens */
+}
+
+.hero {
+    padding: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+/* General heading adjustments */
+h2, .home-title {
+    font-size: 1.5rem; /* Default size larger screens */
+}
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .nav.active {
+        display: flex; /* Show when active */
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem; /* Bigger icon */
+        cursor: pointer;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: #6b7280;
+        padding: 15px;
+        position: relative; /* Absolute positioning of nav */
+        z-index: 10;
+    }
+}
+
+    .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .nav a {
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none; 
+        border: none; 
+        color: white; 
+        font-size: 1.5rem; 
+        cursor: pointer; 
+}
