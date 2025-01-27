@@ -301,7 +301,7 @@ h2, .home-title {
 
     .nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
