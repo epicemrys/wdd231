@@ -70,21 +70,3 @@ document.querySelector('.nav').style.display = 'flex';
 // Fetch and display members on page load
 document.addEventListener('DOMContentLoaded', fetchMembers);
 
-// JavaScript to set last modification date
-document.getElementById('last-modification').innerText = document.lastModified;
-
-// JavaScript to set the current year
-document.getElementById('current-year').innerText = new Date().getFullYear();
-
-// Toggle navigation menu for mobile
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    if (nav.classList.contains('active')) {
-        nav.style.display = 'flex'; // Directly change the display style here
-    } else {
-        nav.style.display = 'none'; // Hide it
-    }
-});
