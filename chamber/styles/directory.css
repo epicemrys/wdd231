@@ -301,7 +301,7 @@ h2, .home-title {
 
     .nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
@@ -312,6 +312,8 @@ h2, .home-title {
         color: white;
         text-decoration: none;
         font-size: 14px;
+        flex: 1;
+        box-sizing: border-box;
     }
 
     .menu-toggle {
