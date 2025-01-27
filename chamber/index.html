@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="A resource hub for businesses in Timbuktu offering directories, events, and networking opportunities.">
+    <meta name="author" content="Charles Ukoh">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://epicemrys.github.io/wdd231/chamber/images/Timbuktu">
+    <meta property="og:url" content="https://epicemrys.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/timbuktu.png" type="image/png">
+    <link rel="stylesheet" href="styles/chamber.css"> 
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo" class="logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/chamber-home.jpg" alt="Hero Image" class="hero-image">
+        <a href="#" class="hero-button">Join the Chamber of Commerce</a>
+    </div>
+
+    <main>
+        <h2 class="home-title">Home</h2>
+        <div class="home-grid">
+
+            <section class="section event-section">
+                <h3 class="section-title">Current Events</h3>
+                <!-- Placeholder content for events; add actual events later -->
+                <p>Check out our upcoming events!</p>
+            </section>
+
+            <section class="section weather-section">
+                <h3 class="section-title">Current Weather</h3>
+                <div class="weather-info">
+                    <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                    <div class="weather-details">
+                        <p class="temperature" id="current-temp">Loading...</p>
+                        <p id="description">Loading...</p>
+                    </div>
+                </div>
+                <h4>3-Day Forecast</h4>
+                <div id="forecast"></div>
+            </section>
+
+            <section class="section spotlight-section">
+                <h3 class="section-title">Company Spotlights</h3>
+                <div class="grid-container" id="spotlight-container">
+                    <!-- Spotlight members will be populated here via JavaScript -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="footer-center social-icons">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <img src="images/youtube-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <img src="images/x-icon.svg" alt="Twitter Icon" class="icon-twitter">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Visit our LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn Icon" class="icon-linkedin">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Charles Ukoh ⭐</p>
+            <p>&copy; <span id="current-year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
