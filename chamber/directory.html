@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://epicemrys.github.io/wdd231/chamber/images/Timbuktu">
     <meta property="og:url" content="https://epicemrys.github.io/wdd231/chamber/directory.html">
 
-    <link rel="icon" href="images/timbuktu.png" type="image/Timbuktu">
+    <link rel="icon" href="images/timbuktu.png" type="image/png">
     <link rel="stylesheet" href="styles/directory.css"> 
     <script src="scripts/directory.js" defer></script>
 </head>
@@ -27,9 +27,6 @@
                 <p>Chamber of Commerce</p>
             </div>
         </div>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
         <nav class="nav" aria-label="Main navigation">
             <a href="#">Home</a>
             <a href="#">Directory</a>
@@ -100,11 +97,11 @@
             <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
                 <img src="images/youtube-icon.svg" alt="YouTube Icon" class="icon-youtube">
             </a>
-            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
-                <img src="images/x-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+                <img src="images/x-icon.svg" alt="Twitter Icon" class="icon-twitter">
             </a>
-            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
-                <img src="images/linkedin-icon.svg" alt="YouTube Icon" class="icon-youtube">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Visit our LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn Icon" class="icon-linkedin">
             </a>
         </div>
         <div class="footer-right">
@@ -128,11 +125,7 @@
 
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
-            if (nav.classList.contains('active')) {
-                nav.style.display = 'flex'; // Directly change the display style here
-            } else {
-                nav.style.display = 'none'; // Hide it
-            }
+            nav.style.display = nav.classList.contains('active') ? 'flex' : 'none'; // display based on active state
         });
     </script>
 </body>

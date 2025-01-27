@@ -67,6 +67,3 @@ menuToggle.addEventListener('click', () => {
 });
 
 document.querySelector('.nav').style.display = 'flex';
-// Fetch and display members on page load
-document.addEventListener('DOMContentLoaded', fetchMembers);
-
