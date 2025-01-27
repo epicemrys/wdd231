@@ -305,6 +305,7 @@ h2, .home-title {
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
+        width: 100%;
     }
 
     .nav a {
@@ -314,6 +315,7 @@ h2, .home-title {
         font-size: 14px;
         flex: 1;
         box-sizing: border-box;
+        justify-content: space-around;
     }
 
     .menu-toggle {
