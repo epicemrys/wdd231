@@ -110,3 +110,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set the current year
     document.getElementById('current-year').innerText = new Date().getFullYear();
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+
+    if (nav.classList.contains('active')) {
+        this.innerHTML = '&times;'; // X symbol when the menu is open
+    } else {
+        this.innerHTML = '&#9776;'; // Hamburger icon when the menu is closed
+    }
+});
+
+// Wayfinding - Get the current URL path
+const currentPath = window.location.pathname;
+
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav a');
+
+// Loop through the nav links to find the matching one
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath || 
+        (link.getAttribute('href') === '#' && currentPath === '')) { 
+        link.classList.add('active');
+    }
+});
