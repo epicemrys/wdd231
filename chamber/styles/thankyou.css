@@ -5,10 +5,10 @@ main {
 }
 
 footer {
-    margin-top: 2rem; /* Ensure footer is a bit separated from main content */
+    margin-top: 2rem;
 }
 
 /* Consistent styling for text in thank you page */
 strong {
-    color: #007bff; /* Make strong text consistent with theme */
+    color: #007bff;
 }

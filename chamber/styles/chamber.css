@@ -319,9 +319,7 @@ h2, .home-title {
         width: 100%;
         gap: 1rem;
         color: #e0e0e0;
-        flex-direction: column;
-        margin-top: 0 10px;
-        
+        flex-direction: column; 
     }
 
     .nav a {

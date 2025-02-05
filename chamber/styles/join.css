@@ -5,7 +5,7 @@ main {
 }
 
 form {
-    background-color: #f9f9f9; /* Light background for the form */
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     border: 2px solid #e0e0e0; /* Border for form */
@@ -22,7 +22,7 @@ h2 {
 }
 
 label {
-    display: block; /* Block display for labels */
+    display: block;
 }
 
 /* Space between inputs */
