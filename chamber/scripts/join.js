@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
      // Set the current year
      document.getElementById('current-year').innerText = new Date().getFullYear();
+});
 
+document.addEventListener("DOMContentLoaded", function() {
      // Menu toggle functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
