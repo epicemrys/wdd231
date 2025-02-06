@@ -83,11 +83,11 @@ main {
     padding: 2rem;
 }
 
-h2 {
+.header h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: #FFFFFF;
 }
 
 h1  {
