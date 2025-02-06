@@ -142,7 +142,7 @@ button:hover {
         z-index: 1;
     }
     
-    .nav.show .nav-links {
+    .nav.active .nav-links {
         display: flex;
     }
 

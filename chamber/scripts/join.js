@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const nav = document.querySelector('.nav');
 
     menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('show');
-        this.textContent = nav.classList.contains('show') ? '✖ Close' : '☰ Menu'; // Toggle label
+        nav.classList.toggle('active');
+        this.textContent = nav.classList.contains('active') ? '✖ Close' : '☰ Menu'; // Toggle label
     });
 });
 
