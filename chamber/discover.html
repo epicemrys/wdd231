@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce</title>
-    <meta name="description" content="A resource hub for businesses in Timbuktu offering directories, events, and networking opportunities.">
+    <title>Timbuktu Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover local attractions in Timbuktu.">
     <meta name="author" content="Charles Ukoh">
-    
+
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://epicemrys.github.io/wdd231/chamber/images/Timbuktu">
-    <meta property="og:url" content="https://epicemrys.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://epicemrys.github.io/wdd231/chamber/discover.html">
 
     <link rel="icon" href="images/timbuktu.png" type="image/png">
-    <link rel="stylesheet" href="styles/chamber.css"> 
-    <script src="scripts/chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/discover.css"> 
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header class="header" role="banner">
@@ -29,10 +29,10 @@
         </div>
         <nav class="nav" aria-label="Main navigation">
             <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
-            <a href="index.html" class="active">Home</a> <!--Wayfinding current page-->
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html" class="active">Discover</a>
         </nav>
     </header>
 
@@ -42,36 +42,15 @@
     </div>
 
     <main>
-        <h1 class="home-title">Timbuktu Chamber of Commerce</h1>
-        <div class="home-grid">
+        <h1 class="home-title">Discover Timbuktu</h1>
+        
+        <aside class="visitor-info">
+            <p id="visit-message"></p>
+        </aside>
 
-            <section class="section event-section">
-                <h3 class="section-title">Current Events</h3>
-                <!-- Placeholder content for events; add actual events later -->
-                <p>Check out our upcoming events!</p>
-            </section>
-
-            <section class="section weather-section">
-                <h3 class="section-title">Current Weather</h3>
-                <div class="weather-info">
-                    <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon" id="weather-icon">
-                    <div class="weather-details">
-                        <p class="temperature" id="current-temp">Loading...</p>
-                        <p id="description">Loading...</p>
-                    </div>
-                </div>
-                <h4>3-Day Forecast</h4>
-                <div id="forecast"></div>
-            </section>
-
-            <section class="section spotlight-section">
-                <h3 class="section-title">Company Spotlights</h3>
-                <div class="grid-container" id="spotlight-container">
-                    <!-- Spotlight members will be populated here via JavaScript -->
-                </div>
-            </section>
-
-        </div>
+        <section class="grid-container" id="items-container">
+            <!-- Discover Cards will be populated here via JavaScript -->
+        </section>
     </main>
 
     <footer class="footer">
@@ -100,5 +79,6 @@
             <p>Last Modification: <span id="last-modification"></span></p>
         </div>
     </footer>
+
 </body>
 </html>

@@ -67,3 +67,21 @@ menuToggle.addEventListener('click', () => {
 });
 
 document.querySelector('.nav').style.display = 'flex';
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', () => {
+        // Toggle the active class to show/hide menu links
+        nav.classList.toggle('active');
+
+        // Change the menu toggle icon from hamburger to 'X' and vice versa
+        if (nav.classList.contains('active')) {
+            menuToggle.innerHTML = '&times;'; // Change to "X"
+        } else {
+            menuToggle.innerHTML = '&#9776;'; // Change back to hamburger
+        }
+    });
+});
