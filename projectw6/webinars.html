@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Webinars | Recruitment Resource Hub">
+    <meta name="description" content="Join our engaging webinars designed for job seekers and employers. Gain insights from industry experts, explore recruitment strategies, and enhance your career development skills. Sign up now to stay informed and empowered!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <link rel="stylesheet" href="styles/talentconnect.css">
+    <link rel="icon" href="images/tca-logo-fav.webp" type="image/webp">
+   
+    <title>Webinars | Recruitment Resource Hub</title>
+
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Talent Connect Agency - Empowering Careers">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://epicemrys.github.io/wdd231/projectw6/images/talent-connect-logo">
+    <meta property="og:url" content="https://epicemrys.github.io/wdd231/projectw6/talentconnect.html">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/tca.png" alt="Talent Connect Agency Logo" loading="lazy">
+            </div>
+            <nav class="nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="talentconnect.html">Home</a></li> 
+                    <li><a href="resources.html">Resources</a></li> 
+                    <li><a href="insights.html">Insights</a></li> 
+                    <li><a href="webinars.html" class="active">Webinars</a></li> <!--Wayfinding current page-->
+                </ul>
+            </nav>
+        </div>
+        <h1>Webinars</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Upcoming Webinars</h2>
+            <p>Join our interactive webinars to learn from industry leaders and enhance your skills.</p>
+        </section>
+        <section>
+            <h2>Webinar Topics</h2>
+            <p>Explore various topics including resume building, interview preparation, and career advancement strategies.</p>
+        </section>
+        <section>
+            <h2>How to Register</h2>
+            <p>Sign up for our webinars to secure your spot and receive updates on future sessions.</p>
+        </section>
+        <section>
+            <h2>Past Webinar Highlights</h2>
+            <p>Check out the highlights from our previous webinars and see what you missed!</p>
+        </section>
+
+        <div id="thank-you-message" style="display:none;">
+            <h3>Thank You for Signing Up!</h3>
+            <p>Your registration has been received. We will keep you updated on upcoming webinars.</p>
+        </div>
+        
+        <form id="webinar-signup-form">
+            <h2>Stay Informed & Register for Upcoming Webinars</h2>
+        
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" title="First Name" required autocomplete="given-name" />
+            </div>
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" title="Last Name" required autocomplete="family-name" />
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@example.com" />
+            </div>
+            <div>
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" required autocomplete="tel" />
+            </div>
+            <div>
+                <label for="webinar-topic">Select Webinar Topic:</label>
+                <select id="webinar-topic" name="webinar-topic" title="Webinar Topic" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="topic1">Webinar Topic 1</option>
+                    <option value="topic2">Webinar Topic 2</option>
+                    <option value="topic3">Webinar Topic 3</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+                <label for="subscribe">Subscribe to our newsletter for updates on future webinars</label>
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>WDD231 Final Project W6 ⭐ Charles Ukoh </p>
+            <p>&copy; <span id="current-year"></span> Talent Connect Agency</p>
+            <p>Last modified: <span id="last-modification"></span></p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/talent-connect-agency" target="_blank" aria-label="Visit our LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn Icon" class="icon-linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/talentconnect.js" type="module"></script>
+</body>
+</html>

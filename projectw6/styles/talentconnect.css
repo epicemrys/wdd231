@@ -1,0 +1,408 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+}
+
+header {
+    background: #0056b3; 
+    color: white;                            
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header-container .nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+/* h1 to appear below the navigation */
+header h1 {
+    font-size: 2rem; 
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif; 
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    display: flex; 
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-links {
+    display: flex; 
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 8px 12px;  
+    border-radius: 5px; 
+    transition: border 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Background color changes on hover */
+.nav-links a:hover, .nav-links a:focus {
+    color: #ffcc00;
+}
+
+.nav-links a.active {
+    text-decoration: underline double #ffcc00; /* Double underline for the active link */
+    color: #ffcc00; /* Optional: change color of the active link */
+    font-weight: bold;/* Optionally bold the active link */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+    z-index: 1000; /* TO above other content */
+}
+
+/* layout */
+.card-container {
+    justify-content: center;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns and 1fr for mobile */
+    gap: 20px; /* Space between cards */
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+    animation: slide-in 0.5s ease forwards;
+    opacity: 0;
+}
+
+.card:hover {
+    border-color: #007bff;
+    transform: translateY(-5px);
+}
+.card a:hover {
+    background-color: #0056b3; /* Darker on the hover */
+}
+
+.card h3 {
+    font-size: 1.3rem; /* Font size for headings */
+    margin: 0 0 10px; /* Margin below heading */
+}
+
+.card p {
+    font-size: 1rem; /* Font size for paragraphs */
+    color: #555; /* Darker color for the text */
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: white; 
+    background-color: #007BFF; /* for buttons */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modals SPotlight and Job listings */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    position: relative;
+    width: 80%;
+    margin: 15% auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #aaa;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.spotlight-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping to create new rows */
+    margin-top: 20px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f0f8ff;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.job-listing {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 5px; /* Margin around each job listing */
+    transition: transform 0.3s;
+}
+
+.job-listing:hover {
+    transform: scale(1.03); /* Some slight scaling on hover */
+}
+
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Larger Footer Styles */
+.footer {
+    background-color: #0056b3; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1200px; /* Width limited to ensure readability */
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer .footer-links {
+    margin: 20px 0; /* Space the elements */
+}
+
+.footer .footer-links a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 15px; /* Space out the links */
+    transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+    color: #ffcc00; /* Change link color on hover */
+}
+
+.footer .social-icons {
+    margin: 20px 0; /* Space for social icons */
+}
+
+.social-icons a {
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale up icons on hover */
+}
+
+/* Form Designs */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 50px;
+    border: 4px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;   
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#thank-you-message {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #ffcc00;
+}
+
+
+/* Mobile Smaller Responsive */
+@media (max-width: 768px) {
+    
+    .nav {
+     display: block;
+     position: relative;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+    
+    .nav-links {
+        display: none;
+        background: #0056b3;
+        position: absolute;
+        right: 20px;
+        z-index: 1000;
+        transition: visibility 0s, opacity 0.5s ease; /* Smooth transition */
+    }
+
+    .nav.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links.active {
+        display: block; /* Show navigation links when active */
+    }
+
+    .menu-toggle.active + a {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none; 
+        border: none; 
+        color: #FFFFFF; 
+        font-size: 1.5rem; 
+        cursor: pointer;
+    }
+
+    .logo img {
+        max-width: 120px; /* Smaller max-width */
+    }
+
+    /* Lazy loading images */
+    img[loading="lazy"] {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Add spacing and layout adjustments */
+    main {
+        padding: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+
+    .footer {
+        background: #0056b3;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footer-links a {
+        margin: 0 10px; /*spacing between links */
+    }
+
+    .social-icons img {
+        width: 30px; /* Slightly smaller icons */
+    }
+}

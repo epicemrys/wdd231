@@ -1,0 +1,107 @@
+{
+    "jobs": [
+        {
+            "title": "Software Engineer",
+            "company": "Tech Solutions",
+            "location": "Remote",
+            "description": "Develop and maintain software applications."
+        },
+        {
+            "title": "Project Manager",
+            "company": "Business Inc.",
+            "location": "Ikeja, Lagos",
+            "description": "Lead projects from inception to completion."
+        },
+        {
+            "title": "HR Specialist",
+            "company": "HR Experts",
+            "location": "Abuja, Nigeria",
+            "description": "Manage recruitment and onboarding processes."
+        },
+        {
+            "title": "Data Analyst",
+            "company": "Data Corp",
+            "location": "New York, NY",
+            "description": "Analyze data trends and provide insights."
+        },
+        {
+            "title": "Cleaner",
+            "company": "Capital Supermarket.",
+            "location": "Ibadan, Nigeria",
+            "description": "Lead development and manage product lifecycle."
+        },
+        {
+            "title": "Business Development Manager",
+            "company": "Escrow Uncle Ltd.",
+            "location": "Remote",
+            "description": "Lead development and manage product lifecycle."
+        },
+        {
+            "title": "Web Developer",
+            "company": "Web Solutions",
+            "location": "Idaho, US",
+            "description": "Design and develop responsive websites."
+        },
+        {
+            "title": "Graphic Designer",
+            "company": "Charlie Creative Agency",
+            "location": "Remote",
+            "description": "Create visual concepts to communicate ideas."
+        },
+        {
+            "title": "Marketing Coordinator",
+            "company": "Marketing Pros",
+            "location": "Idaho, US",
+            "description": "Assist in the development of marketing strategies."
+        },
+        {
+            "title": "UX/UI Designer",
+            "company": "Design Studio",
+            "location": "Seattle, WA",
+            "description": "Optimize user experience for websites and applications."
+        },
+        {
+            "title": "System Administrator",
+            "company": "IT Solutions",
+            "location": "Remote",
+            "description": "Manage and maintain IT systems and networks."
+        },
+        {
+            "title": "Sales Associate",
+            "company": "Retail Chain",
+            "location": "Gbagada, Lagos",
+            "description": "Assist customers with product selection and inquiries."
+        },
+        {
+            "title": "Business Analyst",
+            "company": "Fintech Firm",
+            "location": "Remote",
+            "description": "Analyze business processes and recommend improvements."
+        },
+        {
+            "title": "Content Writer",
+            "company": "Publishing Inc.",
+            "location": "Remote",
+            "description": "Create engaging content for various platforms."
+        },
+        {
+            "title": "Network Engineer",
+            "company": " Telecom Ltd.",
+            "location": "Ikeja, Lagos",
+            "description": "Design and implement network solutions."
+        },
+        {
+            "title": "Accountant",
+            "company": "Finance Co.",
+            "location": "Miami, FL",
+            "description": "Manage financial records and audits."
+        },
+        {
+            "title": "Data Scientist",
+            "company": "Tech Innovations",
+            "location": "Austin, TX",
+            "description": "Extract insights from data using statistical techniques."
+        }
+
+    ]
+}

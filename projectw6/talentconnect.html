@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Home | Recruitment Resource Hub">
+    <meta name="description" content="Welcome to the Recruitment Resource Hub. Your portal for job seekers and employers with tips, insights, and resources.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <link rel="stylesheet" href="styles/talentconnect.css">
+    <link rel="icon" href="images/tca-logo-fav.webp" type="image/webp">
+    <script src="scripts/talentconnect.js" defer></script>
+    <title>Home | Recruitment Resource Hub</title>
+
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Talent Connect Agency - Empowering Careers">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://epicemrys.github.io/wdd231/projectw6/images/talent-connect-logo">
+    <meta property="og:url" content="https://epicemrys.github.io/wdd231/projectw6/talentconnect.html">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/tca.png" alt="Talent Connect Agency Logo" loading="lazy">
+            </div>
+            <nav class="nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="talentconnect.html" class="active">Home</a></li> <!--Wayfinding current page-->
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="webinars.html">Webinars</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Welcome to Recruitment Resource Hub</h1> 
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card" id="job-search-tips-card">
+                <h3>Job Search Tips</h3>
+                <p>Get the latest articles and guides on crafting the perfect resume and preparing for your interviews.</p>
+                <a href="#" data-modal="job-search-tips-modal">Learn More</a>
+            </div>
+            <div class="card" id="industry-insights-card">
+                <h3>Industry Insights</h3>
+                <p>Stay updated with trends, in-demand skills, and employment news to align your career goals.</p>
+                <a href="#" data-modal="industry-insights-modal">Learn More</a>
+            </div>
+            <div class="card" id="employer-resources-card">
+                <h3>Employer Resources</h3>
+                <p>Explore best practices for recruitment and employee retention.</p>
+                <a href="#" data-modal="employer-resources-modal">Learn More</a>
+            </div>
+            <div class="card" id="success-stories-card">
+                <h3>Success Stories</h3>
+                <p>Read about successful placements and testimonials from satisfied job seekers and employers.</p>
+                <a href="#" data-modal="success-stories-modal">Learn More</a>
+            </div>
+        </div>
+
+        <h2>Current Job Listings</h2>
+        <div id="job-listings" class="spotlight-container"></div>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal" id="job-search-tips-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Job Search Tips</h2>
+            <p>Detailed information about crafting the perfect resume and preparing for interviews...</p>
+        </div>
+    </div>
+
+    <div class="modal" id="industry-insights-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Industry Insights</h2>
+            <p>Detailed information on trends and employment news...</p>
+        </div>
+    </div>
+
+    <div class="modal" id="employer-resources-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Employer Resources</h2>
+            <p>Information about best practices in recruitment...</p>
+        </div>
+    </div>
+
+    <div class="modal" id="success-stories-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Success Stories</h2>
+            <p>Read about successful placements and testimonials...</p>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>WDD231 Final Project W6 ⭐ Charles Ukoh </p>
+            <p>&copy; <span id="current-year"></span> Talent Connect Agency</p>
+            <p>Last modified: <span id="last-modification"></span></p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/talent-connect-agency" target="_blank" aria-label="Visit our LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn Icon" class="icon-linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
